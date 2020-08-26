@@ -6,6 +6,8 @@ This repo is a companion to a [CodeControl](https://codecontrol.io/) Virtual Lun
 
 The `master` branch contains the starter template for building an app using Svelte, XState and Tailwind.
 
+The `example` branch contains the app we started building during the lunch event linked above.
+
 ## Resources
 
 - [Official Svelte tutorial](https://svelte.dev/tutorial/basics)
