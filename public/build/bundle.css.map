@@ -1,8 +1,12 @@
 {
   "version": 3,
   "file": "bundle.css",
-  "sources": [],
-  "sourcesContent": [],
+  "sources": [
+    "../../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script lang=\"ts\"></script>\n\n<style>\n  .centered {\n    display: grid;\n    height: 100vh;\n    justify-content: center;\n    align-items: center;\n\n    font-weight: 900;\n    font-size: xx-large;\n  }\n</style>\n\n<main class=\"centered\">Hello CodeControl 👋</main>\n"
+  ],
   "names": [],
-  "mappings": ""
+  "mappings": "AAGE,SAAS,eAAC,CAAC,AACT,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,KAAK,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CAEnB,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,QAAQ,AACrB,CAAC"
 }

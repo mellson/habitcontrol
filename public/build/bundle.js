@@ -48,6 +48,12 @@ var app = (function () {
     function element(name) {
         return document.createElement(name);
     }
+    function attr(node, attribute, value) {
+        if (value == null)
+            node.removeAttribute(attribute);
+        else if (node.getAttribute(attribute) !== value)
+            node.setAttribute(attribute, value);
+    }
     function children(element) {
         return Array.from(element.childNodes);
     }
@@ -261,6 +267,13 @@ var app = (function () {
         dispatch_dev("SvelteDOMRemove", { node });
         detach(node);
     }
+    function attr_dev(node, attribute, value) {
+        attr(node, attribute, value);
+        if (value == null)
+            dispatch_dev("SvelteDOMRemoveAttribute", { node, attribute });
+        else
+            dispatch_dev("SvelteDOMSetAttribute", { node, attribute, value });
+    }
     function validate_slots(name, slot, keys) {
         for (const slot_key of Object.keys(slot)) {
             if (!~keys.indexOf(slot_key)) {
@@ -293,8 +306,9 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			main = element("main");
-    			main.textContent = "Hello 👋";
-    			add_location(main, file, 2, 0, 29);
+    			main.textContent = "Hello CodeControl 👋";
+    			attr_dev(main, "class", "centered svelte-1rrosxr");
+    			add_location(main, file, 14, 0, 205);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -349,9 +363,6 @@ var app = (function () {
 
     const app = new App({
         target: document.body,
-        props: {
-            name: "Code Control",
-        },
     });
 
     return app;
