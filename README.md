@@ -6,7 +6,13 @@ This repo is a companion to a [CodeControl](https://codecontrol.io/) Virtual Lun
 
 The `master` branch contains the starter template for building an app using Svelte, XState and Tailwind.
 
-The `example` branch contains the app we started building during the lunch event linked above.
+The `example` branch contains the app we started building during the lunch event linked above. The example is deployed here: [https://habitcontrol.netlify.app/](https://habitcontrol.netlify.app/)
+
+## Getting started (using yarn)
+
+1. Clone this repo and enter the folder where you cloned it
+2. run `yarn install`
+3. run `yarn dev` to start the project
 
 ## Resources
 
