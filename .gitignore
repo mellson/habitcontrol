@@ -105,4 +105,4 @@ dist
 .tern-port
 
 # Svelte build
-public/build/
+/public/build
