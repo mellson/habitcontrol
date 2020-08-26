@@ -4,7 +4,7 @@ This repo is a companion to a [CodeControl](https://codecontrol.io/) Virtual Lun
 
 ## A brief intro to Svelte, XState and Tailwind
 
-The `start` branch contains the starter template for building an app using Svelte, XState and Tailwind.
+The `master` branch contains the starter template for building an app using Svelte, XState and Tailwind.
 
 ## Resources
 
