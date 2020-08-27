@@ -62,4 +62,9 @@
   {#if $state.matches('edit')}
     <AddHabit />
   {/if}
+  <div class="fixed bottom-0 right-0 p-4">
+    <a href="https://github.com/mellson/habitcontrol">
+      https://github.com/mellson/habitcontrol
+    </a>
+  </div>
 </main>
